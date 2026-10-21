@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Guía para las familias del Hogar Vicentina de Escazú: orientaciones para acompañar a su ser querido, 10 principios, checklist familiar, plantillas de acuerdos y recursos confiables.">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Hogar Vicentina de Escazú">
+<meta property="og:title" content="Para familias | Hogar Vicentina de Escazú">
+<meta property="og:description" content="Orientaciones, checklist, plantillas de acuerdos y recursos para acompañar a su ser querido en la vejez.">
+<meta property="og:url" content="https://hogarescazu.cr/familias.html">
+<meta property="og:image" content="https://hogarescazu.cr/images/og.jpg">
+<meta property="og:locale" content="es_CR">
+<link rel="canonical" href="https://hogarescazu.cr/familias.html">
+<title>Para familias | Hogar Vicentina de Escazú</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --teal: #109090;
+    --teal-dark: #0A6B6B;
+    --teal-light: #E0F3F3;
+    --teal-mid: #80CCCC;
+    --rose: #F8C0C0;
+    --rose-light: #FEF0F0;
+    --rose-dark: #C47070;
+    --charcoal: #3D3D44;
+    --gray-mid: #6B7280;
+    --gray-light: #F7F7F5;
+    --warm-white: #FDFAF7;
+    --cream: #FDF6F0;
+    --border: rgba(23, 166, 145, 0.18);
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html { scroll-behavior: smooth; scroll-padding-top: 130px; }
+  body { font-family: 'Inter', sans-serif; color: var(--charcoal); background: var(--warm-white); font-size: 16px; line-height: 1.7; overflow-x: hidden; }
+  a { color: var(--teal); }
+  button, input, textarea { font-family: inherit; }
+
+  /* ── NAV (igual al sitio principal) ── */
+  nav { position: fixed; top: 0; left: 0; right: 0; z-index: 100; background: rgba(253,250,247,0.95); backdrop-filter: blur(8px); border-bottom: 1px solid var(--border); padding: 0 2rem; display: flex; align-items: center; justify-content: space-between; height: 68px; }
+  .nav-logo { display: flex; align-items: center; text-decoration: none; }
+  .nav-logo img { height: 56px; width: auto; display: block; }
+  .nav-links { display: flex; align-items: center; gap: 2rem; list-style: none; }
+  .nav-links a { font-size: 14px; font-weight: 500; color: var(--charcoal); text-decoration: none; transition: color 0.2s; }
+  .nav-links a:hover, .nav-links a.active { color: var(--teal); }
+  .nav-cta { background: var(--teal); color: white !important; padding: 9px 20px; border-radius: 30px; font-size: 13px !important; }
+  .nav-cta:hover { background: var(--teal-dark); }
+  .nav-hamburger { display: none; flex-direction: column; gap: 5px; cursor: pointer; background: none; border: none; padding: 4px; }
+  .nav-hamburger span { display: block; width: 22px; height: 2px; background: var(--charcoal); border-radius: 2px; }
+
+  /* ── HERO ── */
+  .hero { padding: 140px 2rem 4rem; background: linear-gradient(180deg, var(--warm-white) 0%, var(--teal-light) 100%); text-align: center; }
+  .eyebrow { display: inline-block; font-size: 12px; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; color: var(--teal); margin-bottom: 1rem; }
+  .hero h1 { font-family: 'Playfair Display', serif; font-weight: 600; font-size: clamp(2.1rem, 5vw, 3.4rem); line-height: 1.15; max-width: 760px; margin: 0 auto 1.25rem; }
+  .hero h1 em { color: var(--teal); font-style: italic; }
+  .hero p { max-width: 640px; margin: 0 auto; color: var(--gray-mid); font-size: 1.05rem; }
+  .hero-note { margin-top: 1.5rem; font-size: 13px; color: var(--teal-dark); }
+
+  /* ── SUB-NAV ── */
+  .subnav { position: sticky; top: 68px; z-index: 50; background: rgba(253,250,247,0.97); border-bottom: 1px solid var(--border); }
+  .subnav-inner { max-width: 1100px; margin: 0 auto; display: flex; gap: 0.5rem; overflow-x: auto; padding: 0.75rem 1.25rem; scrollbar-width: none; }
+  .subnav-inner::-webkit-scrollbar { display: none; }
+  .subnav a { flex-shrink: 0; font-size: 13px; font-weight: 500; text-decoration: none; color: var(--charcoal); padding: 7px 16px; border-radius: 30px; border: 1px solid var(--border); background: white; transition: all 0.2s; }
+  .subnav a:hover { border-color: var(--teal); color: var(--teal); }
+
+  /* ── SECCIONES ── */
+  section { padding: 5rem 1.25rem; }
+  section.alt { background: var(--cream); }
+  .container { max-width: 900px; margin: 0 auto; }
+  .section-head { text-align: center; margin-bottom: 2.5rem; }
+  .section-title { font-family: 'Playfair Display', serif; font-weight: 600; font-size: clamp(1.7rem, 3.5vw, 2.4rem); line-height: 1.2; margin-bottom: 0.75rem; }
+  .section-lead { color: var(--gray-mid); max-width: 640px; margin: 0 auto; }
+
+  /* Acordeones */
+  .acc { background: white; border: 1px solid var(--border); border-radius: 16px; margin-bottom: 0.75rem; overflow: hidden; transition: box-shadow 0.2s, border-color 0.2s; }
+  .acc[open] { border-color: var(--teal-mid); box-shadow: 0 8px 28px rgba(16,144,144,0.08); }
+  .acc summary { list-style: none; cursor: pointer; padding: 1.1rem 1.4rem; display: flex; align-items: center; gap: 1rem; }
+  .acc summary::-webkit-details-marker { display: none; }
+  .acc summary::after { content: '+'; margin-left: auto; font-size: 22px; color: var(--teal); line-height: 1; flex-shrink: 0; transition: transform 0.2s; }
+  .acc[open] summary::after { transform: rotate(45deg); }
+  .acc-num { flex-shrink: 0; width: 40px; height: 40px; border-radius: 50%; background: var(--teal-light); color: var(--teal-dark); font-weight: 600; font-size: 14px; display: flex; align-items: center; justify-content: center; }
+  .acc-kicker { font-size: 11px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: var(--teal); }
+  .acc-title { font-weight: 600; font-size: 1rem; line-height: 1.35; }
+  .acc-sub { font-size: 13px; color: var(--gray-mid); }
+  .acc-body { padding: 0 1.4rem 1.4rem; border-top: 1px solid var(--border); padding-top: 1.1rem; }
+  .acc-body h4 { font-size: 11px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: var(--teal-dark); margin: 1rem 0 0.4rem; }
+  .acc-body h4:first-child { margin-top: 0; }
+  .acc-body p { font-size: 14.5px; color: #4B4B52; }
+  .bullets { list-style: none; }
+  .bullets li { position: relative; padding-left: 1.2rem; font-size: 14.5px; margin-bottom: 0.45rem; }
+  .bullets li::before { content: ''; position: absolute; left: 0; top: 0.65em; width: 6px; height: 6px; border-radius: 50%; background: var(--teal); }
+  .recs { background: var(--teal-light); border-radius: 12px; padding: 1rem 1.2rem; margin-top: 1rem; }
+  .talk { background: var(--rose-light); border-radius: 12px; padding: 1rem 1.2rem; margin-top: 1rem; }
+  .talk h4 { color: var(--rose-dark); }
+  .talk .bullets li::before { background: var(--rose-dark); }
+
+  /* Checklist */
+  .progress-card { background: white; border: 1px solid var(--border); border-radius: 16px; padding: 1.25rem 1.5rem; margin-bottom: 1.5rem; }
+  .progress-top { display: flex; justify-content: space-between; font-weight: 600; margin-bottom: 0.6rem; }
+  .progress-top span:last-child { color: var(--teal); }
+  .bar { height: 8px; background: var(--teal-light); border-radius: 30px; overflow: hidden; }
+  .bar > div { height: 100%; background: var(--teal); border-radius: 30px; transition: width 0.4s; }
+  .check-group { background: white; border: 1px solid var(--border); border-radius: 16px; padding: 1.25rem 1.5rem; margin-bottom: 0.75rem; }
+  .check-group-head { display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.75rem; }
+  .check-group-head h3 { font-size: 15px; font-weight: 600; }
+  .check-group-head span { font-size: 13px; font-weight: 600; color: var(--teal); }
+  .check-item { display: flex; gap: 0.75rem; align-items: flex-start; padding: 0.35rem 0; cursor: pointer; font-size: 14.5px; }
+  .check-item input { appearance: none; flex-shrink: 0; width: 20px; height: 20px; margin-top: 2px; border: 2px solid var(--teal-mid); border-radius: 6px; cursor: pointer; display: grid; place-content: center; transition: all 0.15s; }
+  .check-item input:checked { background: var(--teal); border-color: var(--teal); }
+  .check-item input:checked::after { content: ''; width: 5px; height: 10px; border: solid white; border-width: 0 2px 2px 0; transform: rotate(45deg) translate(-1px,-1px); }
+  .check-item input:checked + span { color: var(--gray-mid); text-decoration: line-through; }
+  .check-item input:focus-visible { outline: 3px solid var(--teal-mid); outline-offset: 2px; }
+
+  /* Formularios */
+  .field { margin-bottom: 0.9rem; }
+  .field label { display: block; font-size: 13px; font-weight: 600; margin-bottom: 0.3rem; }
+  .field input, .field textarea { width: 100%; border: 1px solid var(--border); border-radius: 10px; padding: 10px 14px; font-size: 14.5px; background: var(--warm-white); color: var(--charcoal); outline: none; }
+  .field textarea { resize: vertical; min-height: 82px; }
+  .field input:focus, .field textarea:focus { border-color: var(--teal); background: white; }
+  .btn-row { display: flex; gap: 0.6rem; flex-wrap: wrap; margin-top: 0.5rem; }
+  .btn { border: none; border-radius: 30px; padding: 10px 20px; font-size: 13.5px; font-weight: 600; cursor: pointer; transition: all 0.2s; text-decoration: none; display: inline-flex; align-items: center; gap: 6px; }
+  .btn-primary { background: var(--teal); color: white; }
+  .btn-primary:hover { background: var(--teal-dark); }
+  .btn-ghost { background: white; color: var(--charcoal); border: 1px solid var(--border); }
+  .btn-ghost:hover { border-color: var(--teal); color: var(--teal); }
+  .btn-sm { padding: 6px 14px; font-size: 12.5px; }
+  .btn:disabled { opacity: 0.5; cursor: default; }
+
+  /* Recordatorios */
+  .card { background: white; border: 1px solid var(--border); border-radius: 16px; padding: 1.25rem 1.5rem; }
+  .rem-list { display: flex; flex-direction: column; gap: 0.6rem; margin-bottom: 1rem; }
+  .rem { display: flex; justify-content: space-between; align-items: center; gap: 1rem; background: white; border: 1px solid var(--border); border-radius: 12px; padding: 0.8rem 1.1rem; flex-wrap: wrap; }
+  .rem-label { font-weight: 600; font-size: 14.5px; }
+  .rem-date { font-size: 13px; color: var(--gray-mid); }
+  .rem-actions { display: flex; align-items: center; gap: 0.5rem; }
+  .pill { font-size: 12px; font-weight: 600; padding: 3px 10px; border-radius: 30px; white-space: nowrap; }
+  .pill.ok { background: var(--teal-light); color: var(--teal-dark); }
+  .pill.soon { background: #FFF3DC; color: #8A5A00; }
+  .pill.late { background: var(--rose-light); color: var(--rose-dark); }
+  .icon-btn { background: none; border: none; cursor: pointer; color: var(--gray-mid); font-size: 16px; padding: 4px; }
+  .icon-btn:hover { color: var(--rose-dark); }
+  .rem-form { display: grid; grid-template-columns: 1fr auto; gap: 0.6rem; }
+  .rem-form input { border: 1px solid var(--border); border-radius: 10px; padding: 10px 14px; font-size: 14.5px; background: var(--warm-white); outline: none; min-width: 0; }
+  .rem-form input:focus { border-color: var(--teal); }
+  .quick { display: flex; gap: 0.5rem; flex-wrap: wrap; align-items: center; margin-top: 0.75rem; }
+  .empty { font-size: 14px; color: var(--gray-mid); margin-bottom: 1rem; }
+
+  /* Recursos */
+  .res-cat { font-size: 12px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: var(--teal-dark); margin: 2rem 0 0.75rem; }
+  .res-cat:first-child { margin-top: 0; }
+  .res-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 0.75rem; }
+  .res { display: block; text-decoration: none; color: inherit; background: white; border: 1px solid var(--border); border-radius: 14px; padding: 1.1rem 1.25rem; transition: transform 0.2s, box-shadow 0.2s, border-color 0.2s; }
+  .res:hover { transform: translateY(-3px); box-shadow: 0 10px 26px rgba(16,144,144,0.1); border-color: var(--teal-mid); }
+  .res-tag { display: inline-block; font-size: 11px; font-weight: 600; color: var(--teal-dark); background: var(--teal-light); padding: 2px 10px; border-radius: 30px; margin-bottom: 0.5rem; }
+  .res h3 { font-family: 'Playfair Display', serif; font-weight: 600; font-size: 1.02rem; line-height: 1.35; margin-bottom: 0.25rem; }
+  .res-author { font-size: 12.5px; color: var(--teal); margin-bottom: 0.4rem; }
+  .res p { font-size: 13.5px; color: var(--gray-mid); line-height: 1.6; }
+  .res-cta { display: inline-block; margin-top: 0.5rem; font-size: 13px; font-weight: 600; color: var(--teal); }
+
+  /* Conceptos */
+  .concept-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 0.75rem; }
+  .concept { background: white; border: 1px solid var(--border); border-radius: 14px; padding: 1.1rem 1.25rem; }
+  .concept .acc-kicker { display: block; margin-bottom: 0.25rem; }
+  .concept h3 { font-size: 15px; font-weight: 600; margin-bottom: 0.4rem; line-height: 1.35; }
+  .concept p { font-size: 13.5px; color: var(--gray-mid); line-height: 1.6; }
+
+  /* CTA */
+  .cta { background: var(--charcoal); color: white; text-align: center; padding: 4.5rem 1.25rem; }
+  .cta h2 { font-family: 'Playfair Display', serif; font-weight: 600; font-size: clamp(1.6rem, 3.5vw, 2.2rem); margin-bottom: 0.75rem; }
+  .cta p { color: rgba(255,255,255,0.75); max-width: 560px; margin: 0 auto 1.75rem; }
+  .cta .btn-row { justify-content: center; }
+  .cta .btn-ghost { background: transparent; color: white; border-color: rgba(255,255,255,0.35); }
+  .cta .btn-ghost:hover { border-color: var(--teal-mid); color: var(--teal-mid); }
+
+  footer { background: #2E2E34; color: rgba(255,255,255,0.6); font-size: 13px; padding: 2rem 1.25rem; text-align: center; }
+  footer a { color: var(--teal-mid); text-decoration: none; }
+  footer p + p { margin-top: 0.4rem; }
+
+  .toast { position: fixed; bottom: 24px; left: 50%; transform: translateX(-50%) translateY(20px); background: var(--charcoal); color: white; font-size: 14px; padding: 10px 20px; border-radius: 30px; opacity: 0; pointer-events: none; transition: all 0.25s; z-index: 200; }
+  .toast.show { opacity: 1; transform: translateX(-50%) translateY(0); }
+
+  .whatsapp-float { position: fixed; bottom: 24px; right: 24px; width: 56px; height: 56px; border-radius: 50%; background: #25D366; display: flex; align-items: center; justify-content: center; box-shadow: 0 6px 20px rgba(0,0,0,0.18); z-index: 90; }
+
+  @media (max-width: 900px) {
+    .nav-links { display: none; }
+    .nav-hamburger { display: flex; }
+    .concept-grid { grid-template-columns: repeat(2, 1fr); }
+  }
+  @media (max-width: 640px) {
+    nav { padding: 0 1rem; }
+    .nav-logo img { height: 46px; }
+    .hero { padding: 116px 1rem 3rem; }
+    section { padding: 3.5rem 1rem; }
+    .res-grid, .concept-grid { grid-template-columns: 1fr; }
+    .acc summary { padding: 1rem; gap: 0.75rem; }
+    .acc-body { padding: 1rem 1rem 1.2rem; }
+    .acc-num { width: 34px; height: 34px; font-size: 13px; }
+    .rem-form { grid-template-columns: 1fr; }
+  }
+  @media print {
+    nav, .subnav, .whatsapp-float, .cta, .btn-row, .toast { display: none !important; }
+    .hero { padding-top: 1rem; }
+  }
+</style>
+</head>
+<body>
+
+<nav id="main-nav">
+  <a href="index.html" class="nav-logo"><img src="images/vicentina-de-escazu-hogar-de-larga-estancia.png" alt="Vicentina de Escazú — Hogar de Larga Estancia"></a>
+  <ul class="nav-links">
+    <li><a href="index.html#nosotros">Nuestra Historia</a></li>
+    <li><a href="index.html#servicios">Servicios</a></li>
+    <li><a href="index.html#estancias">Estancias Temporales</a></li>
+    <li><a href="index.html#descargas">Documentos</a></li>
+    <li><a href="familias.html" class="active">Para Familias</a></li>
+    <li><a href="index.html#contacto" class="nav-cta">Contáctenos</a></li>
+  </ul>
+  <button class="nav-hamburger" onclick="toggleMobileMenu()" aria-label="Menú">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<header class="hero">
+  <span class="eyebrow">Para familias</span>
+  <h1>Acompañar también <em>se aprende</em></h1>
+  <p>Orientaciones, herramientas y recursos confiables para que su familia acompañe con tranquilidad a su ser querido, antes y durante su estadía en el Hogar.</p>
+  <p class="hero-note">Lo que marque o escriba en esta página se guarda solo en su dispositivo. No se envía a ningún lugar.</p>
+</header>
+
+<div class="subnav">
+  <div class="subnav-inner">
+    <a href="#guias">Vivir en el Hogar</a>
+    <a href="#principios">10 principios</a>
+    <a href="#checklist">Checklist familiar</a>
+    <a href="#acuerdos">Acuerdos</a>
+    <a href="#recordatorios">Recordatorios</a>
+    <a href="#recursos">Recursos</a>
+    <a href="#conceptos">Conceptos clave</a>
+  </div>
+</div>
+
+<section id="guias">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">Vivir esta etapa en el Hogar</span>
+      <h2 class="section-title">Orientaciones para las familias</h2>
+      <p class="section-lead">Lo que más preguntan las familias cuando su ser querido llega a vivir al Hogar. Toque cada tema para leerlo.</p>
+    </div>
+    <div id="guias-list"></div>
+  </div>
+</section>
+
+<section id="principios" class="alt">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">La guía</span>
+      <h2 class="section-title">10 principios para acompañar la vejez en familia</h2>
+      <p class="section-lead">Basados en la Ley 7935, la Convención Interamericana sobre los Derechos de las Personas Mayores y el modelo ICOPE de la OMS.</p>
+    </div>
+    <div id="principios-list"></div>
+  </div>
+</section>
+
+<section id="checklist">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">Paso a paso</span>
+      <h2 class="section-title">Checklist familiar</h2>
+      <p class="section-lead">Marque lo que su familia ya tiene resuelto. Su avance queda guardado en este dispositivo para que lo retome cuando quiera.</p>
+    </div>
+    <div class="progress-card">
+      <div class="progress-top"><span>Avance de su familia</span><span id="total-pct">0%</span></div>
+      <div class="bar"><div id="total-bar" style="width:0%"></div></div>
+    </div>
+    <div id="checklist-list"></div>
+    <div class="btn-row" style="justify-content:flex-end;">
+      <button class="btn btn-ghost btn-sm" onclick="resetChecklist()">Borrar mis marcas</button>
+    </div>
+  </div>
+</section>
+
+<section id="acuerdos" class="alt">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">Por escrito</span>
+      <h2 class="section-title">Plantillas de acuerdos familiares</h2>
+      <p class="section-lead">Los acuerdos claros evitan malentendidos entre hermanos. Complete la plantilla, cópiela para enviarla por WhatsApp o descárguela.</p>
+    </div>
+    <div id="acuerdos-list"></div>
+  </div>
+</section>
+
+<section id="recordatorios">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">Para no olvidar</span>
+      <h2 class="section-title">Recordatorios de revisión</h2>
+      <p class="section-lead">Programe cuándo revisar el plan familiar. Puede agregar cada recordatorio al calendario de su celular.</p>
+    </div>
+    <div id="rem-list" class="rem-list"></div>
+    <div class="card">
+      <div class="rem-form">
+        <input id="rem-label" type="text" placeholder="Ej: Revisar el plan de cuidado en familia" aria-label="Qué quiere recordar">
+        <input id="rem-date" type="date" aria-label="Fecha">
+      </div>
+      <div class="quick">
+        <button class="btn btn-ghost btn-sm" onclick="quickDate(3)">En 3 meses</button>
+        <button class="btn btn-ghost btn-sm" onclick="quickDate(6)">En 6 meses</button>
+        <button class="btn btn-ghost btn-sm" onclick="quickDate(12)">En 1 año</button>
+        <button class="btn btn-primary btn-sm" style="margin-left:auto;" onclick="addReminder()">+ Agregar</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="recursos" class="alt">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">Biblioteca</span>
+      <h2 class="section-title">Recursos confiables</h2>
+      <p class="section-lead">Leyes costarricenses, políticas públicas, manuales de cuidado y cuentas recomendadas, organizados por tema.</p>
+    </div>
+    <div id="recursos-list"></div>
+  </div>
+</section>
+
+<section id="conceptos">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">Para entendernos</span>
+      <h2 class="section-title">Conceptos clave</h2>
+    </div>
+    <div id="conceptos-list" class="concept-grid"></div>
+  </div>
+</section>
+
+<div class="cta">
+  <h2>¿Tiene alguna duda?</h2>
+  <p>El equipo del Hogar está para acompañarles. Escríbanos y con gusto conversamos sobre la situación de su familia.</p>
+  <div class="btn-row">
+    <a class="btn btn-primary" href="https://wa.me/50688415658?text=Hola,%20escribo%20desde%20la%20p%C3%A1gina%20para%20familias" target="_blank" rel="noopener">WhatsApp 8841-5658</a>
+    <a class="btn btn-ghost" href="mailto:hogarvicentinaescazu@gmail.com">hogarvicentinaescazu@gmail.com</a>
+  </div>
+</div>
+
+<footer>
+  <p>© Asociación Hogar Vicentina de Escazú — <a href="index.html">hogarescazu.cr</a> · Organización sin fines de lucro</p>
+  <p>Contenido de la guía basado en <a href="https://www.canas.cr" target="_blank" rel="noopener">Canas</a>, de Msc. Daniel Solís Alfaro.</p>
+</footer>
+
+<a href="https://wa.me/50688415658" target="_blank" rel="noopener" class="whatsapp-float" aria-label="Contactar por WhatsApp">
+  <svg width="28" height="28" viewBox="0 0 24 24" fill="white"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+</a>
+
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<script>
+const DATA = {"principles":[{"n":1,"label":"Conciencia","title":"Construyamos una familia consciente de la vejez","sub":"Educación como punto de partida","teoria":"La familia es el primer y más importante sistema de apoyo en la vida de cualquier persona adulta mayor. Sin embargo, también puede convertirse en el espacio donde se producen las formas más frecuentes de violencia, negligencia y vulneración de derechos — no por mala voluntad, sino por falta de información adecuada. La Encuesta Nacional sobre Discapacidad (2018) documentó que el contexto familiar es el principal escenario de discriminación hacia personas adultas mayores en Costa Rica: más del 23% de las personas mayores de 65 años reportaron haber sido discriminadas dentro de su propia familia, cifra que aumenta al 42.6% en personas mayores de 80 años. La OMS señala que interiorizamos opiniones estereotipadas sobre la vejez desde temprana edad — esta discriminación internalizada afecta tanto a quienes envejecen como a quienes los rodean. Así como las organizaciones construyen una cultura institucional para cumplir sus objetivos, la familia puede y debe construir una cultura del cuidado: un conjunto de valores, conocimientos y prácticas compartidas que permitan acompañar a sus miembros mayores con dignidad, criterio técnico y afecto.","analisis":"El problema no es que las familias costarricenses no quieran a sus adultos mayores. El problema es que con frecuencia actúan desde el amor sin información, lo que puede resultar en decisiones que, con las mejores intenciones, generan daño. El IDESPO documentó en 2016 que el 67.6% de las personas adultas mayores en Costa Rica se sentían poco o nada respetadas por su edad, y el 72.8% se veían poco o nada involucradas en espacios de decisión. La conciencia sobre la vejez es también un ejercicio de empatía: preguntarse '¿cómo me gustaría que me trataran si yo fuera el adulto mayor de esta familia?' puede transformar radicalmente las decisiones cotidianas de cuidado.","recs":["Eduquen juntos, no por separado — toda la familia se beneficia de conocer los conceptos básicos sobre vejez, envejecimiento y derechos en Costa Rica","Identifiquen y cuestionen sus propios mitos: ¿creen que la dependencia es inevitable? ¿que un hogar de larga estadía significa abandono?","Hagan del cuidado un tema de conversación regular, no de emergencia","Incluyan siempre al adulto mayor en las conversaciones sobre su propia vida"],"preguntas":["¿Cómo empiezo a hablar con mi familia sobre la vejez de mi mamá o papá sin que se sientan atacados?","¿Cuáles son los mitos más comunes sobre la vejez que deberíamos cuestionar?","¿Cómo identifico si estamos discriminando sin darnos cuenta a nuestro familiar mayor?"]},{"n":2,"label":"Dignidad","title":"El derecho a la autonomía como base del apoyo","sub":"Respetar la voluntad de la persona adulta mayor","teoria":"La autonomía no es un privilegio: es un derecho humano fundamental. El artículo 6 de la Ley 7935 establece el derecho de toda persona adulta mayor a tomar sus propias decisiones y desarrollar una vida autónoma e independiente. La OMS distingue autonomía —capacidad de decidir— de independencia —capacidad de realizar actividades sin ayuda. Una persona puede tener dependencia funcional y conservar plenamente su autonomía.","analisis":"La infantilización del adulto mayor —tomar decisiones por encima de su voluntad, ignorar sus opiniones— no solo vulnera derechos sino que acelera el deterioro cognitivo y emocional. Apoyar no significa decidir por la persona: significa acompañar sus decisiones con información adecuada y criterio técnico cuando sea necesario.","recs":["Consulte siempre la opinión del adulto mayor antes de decidir","Distinga 'no puede' de 'no quiere' — la resistencia puede ser una preferencia legítima","Recuerde: sin declaratoria judicial de incapacidad, la persona conserva plena capacidad jurídica","Evite la violencia patrimonial o psicológica aunque sea involuntaria"],"preguntas":["¿Cómo respeto la autonomía de mi familiar si ya no puede vivir solo?","¿Qué diferencia hay entre que 'no pueda' y que 'no quiera' hacer algo?","¿Qué dice la ley costarricense sobre la capacidad legal de una persona adulta mayor?"]},{"n":3,"label":"Planificación","title":"¿Cuál será la ruta que tomaremos como familia?","sub":"Factores protectores ante la dependencia","teoria":"La Ley 7935 garantiza a las personas adultas mayores una atención integral que contemple las dimensiones biológica, psicológica y social. La Política Nacional de Cuidados 2021-2031 documenta que 280 mil personas en Costa Rica requieren apoyo para al menos una actividad básica de la vida diaria, y que para 2050 esa demanda será cuatro veces mayor.","analisis":"El error más común es esperar a una hospitalización o diagnóstico grave para organizarse. En ese momento las decisiones se toman bajo presión emocional, sin la participación del adulto mayor y sin distribución equitativa. La ausencia de planificación también genera desigualdad: una sola persona —generalmente una mujer— termina asumiendo la carga total.","recs":["Diagnóstico familiar: ¿cuál es el estado de salud y autonomía? ¿quiénes forman la red de apoyo real?","Mapa de responsabilidades: definan quién aporta qué — no solo dinero, también acompañamiento y gestiones","Plan con revisión periódica: escriban los acuerdos y revísenlos cada seis meses o ante cualquier cambio significativo"],"preguntas":["¿Por dónde empiezo a planificar el cuidado de mi familiar?","¿Cómo hago un diagnóstico honesto de la situación de salud y autonomía de mi familiar?","¿Cómo evito que una sola persona de la familia cargue con todo?"]},{"n":4,"label":"Ejecución","title":"Romper el hielo de la organización familiar","sub":"Del plan a la acción concreta","teoria":"La diferencia entre una familia que planifica y una familia que cuida bien no está solo en la calidad del plan — está en la capacidad de ejecutarlo. El modelo ICOPE de la OMS/OPS propone que la atención integral a una persona mayor no puede limitarse a una intervención puntual: exige acciones múltiples, coordinadas y revisadas periódicamente. La Ley 7935 establece que la atención debe ser integral y que la familia tiene un papel activo e irremplazable. El Manual de Habilidades para Cuidadores de la SEGG señala que la ejecución eficaz requiere tanto dominio de habilidades prácticas como preservación del bienestar del propio cuidador.","analisis":"Uno de los fenómenos más frecuentes es la 'ejecución invisible': una sola persona asume de facto la totalidad del cuidado sin que nadie lo haya acordado explícitamente. Esto tiene consecuencias en cuatro niveles: físico (cansancio crónico), psicológico (culpa, síntomas depresivos), familiar (tensiones con quienes no ayudan) y social (aislamiento progresivo). Alentar al adulto mayor a mantener el máximo tiempo posible su participación en el autocuidado frena la pérdida funcional y preserva su autonomía.","recs":["Distribuyan los roles con nombre y apellido — 'todos vamos a ayudar' no funciona sin especificar quién hace qué","Incorporen el autocuidado del cuidador como parte del plan — horarios de relevo y descanso son condiciones necesarias, no lujos","Aprendan haciendo, con apoyo profesional — la CCSS y el CONAPAM ofrecen talleres para cuidadores familiares","Fomenten que el adulto mayor participe en lo que pueda — preservar su autonomía es parte del cuidado"],"preguntas":["¿Cómo distribuimos las tareas de cuidado entre hermanos sin generar conflictos?","¿Qué señales indican que el cuidador principal está agotado?","¿Qué talleres o apoyo ofrecen la CCSS o el CONAPAM para cuidadores familiares?"]},{"n":5,"label":"Comunicación","title":"La comunicación es la clave","sub":"Diálogo abierto en la familia","teoria":"La familia es un sistema de relaciones interdependientes donde lo que le ocurre a uno afecta a todos. Cuando una persona enfrenta cambios significativos —como los que trae la vejez— el sistema debe reorganizarse, y eso solo es posible con comunicación abierta y sostenida. La comunicación asertiva —expresar pensamientos y necesidades de forma clara y respetuosa sin agredir ni someterse— es la herramienta más efectiva para navegar las tensiones del cuidado.","analisis":"Tres patrones especialmente dañinos: (1) la triangulación —hablar del conflicto con un tercero en lugar de la persona involucrada—; (2) el silencio estratégico —callar para evitar conflictos, acumulando resentimiento—; (3) hablar sobre el adulto mayor sin incluirlo — invisibilizarlo en conversaciones sobre su propia vida. Cuando el adulto mayor tiene dificultades sensoriales o cognitivas, la familia debe adaptar su forma de comunicarse, no al revés.","recs":["Use lenguaje en primera persona: 'yo me siento agotado' en lugar de 'usted nunca ayuda'","Cree un espacio regular de conversación familiar — sin esperar a que haya una crisis","Adapte la comunicación: frases cortas, tono calmado, tiempo para responder, contacto visual"],"preguntas":["¿Cómo le digo a mis hermanos que necesito ayuda sin que se sientan acusados?","¿Cómo hablo con mi familiar mayor si tiene problemas de audición o memoria?","¿Qué hago cuando hablamos de él o ella sin incluirlo en la conversación?"]},{"n":6,"label":"Resistencia","title":"¿Conflictos en la familia?","sub":"Resolución alternativa de conflictos","teoria":"El conflicto es natural en cualquier sistema de cuidado. La Resolución Alternativa de Conflictos (RAC) —negociación, mediación, conciliación— busca resolver disputas sin recurrir a instancias judiciales, preservando las relaciones afectivas. En Costa Rica, el CRAC del Poder Judicial ofrece servicios de mediación familiar gratuitos o de bajo costo.","analisis":"Tres patrones frecuentes: (1) distribución desigual del cuidado, donde el resentimiento crece en silencio; (2) discrepancias en decisiones sobre salud, dinero o modalidad de cuidado; (3) conflictos con el propio adulto mayor que se resiste a recibir ayuda. Este último exige equilibrar el respeto a la autonomía con la responsabilidad de proteger su bienestar.","recs":["Nombre el conflicto antes de que escale: 'noto que hay incomodidad con X, ¿podemos hablarlo?'","Separe el conflicto de la persona — el objetivo es resolver, no ganar","Conozca los recursos: CRAC del Poder Judicial, trabajadores sociales del CCSS, profesionales en gerontología"],"preguntas":["¿Qué hago si mi papá o mamá se niega a aceptar ayuda que sí necesita?","¿Cómo resuelvo un conflicto familiar sobre las decisiones de cuidado sin llegar a un juicio?","¿Dónde puedo pedir mediación familiar gratuita o de bajo costo en Costa Rica?"]},{"n":7,"label":"Acuerdos","title":"Consolidemos acuerdos","sub":"Negociación y compromisos familiares","teoria":"La negociación colaborativa —teoría del Proyecto Harvard— plantea que los mejores acuerdos satisfacen los intereses legítimos de todas las partes. El Código de Familia (Art. 169) establece obligaciones alimentarias hacia personas adultas mayores dependientes, pero la distribución equitativa del cuidado depende de la capacidad de la familia para construir acuerdos voluntarios y sostenibles.","analisis":"Tres errores frecuentes: (1) asumir sin confirmar —los acuerdos tácitos son la fuente más común de resentimiento—; (2) acordar sin considerar la sostenibilidad; (3) no revisar los acuerdos ante cambios en la situación del adulto mayor.","recs":["Ponga los acuerdos por escrito — un mensaje grupal, un correo, una hoja compartida","Incluya una cláusula de revisión: 'revisamos cada seis meses o ante cambios significativos'","Reconozca todos los tipos de aporte — el dinero es visible pero hay muchos otros igualmente valiosos"],"preguntas":["¿Cómo hacemos un acuerdo familiar de cuidado que realmente se cumpla?","¿Qué debe incluir un acuerdo de reparto de responsabilidades entre hermanos?","¿Qué dice el Código de Familia sobre la obligación de ayudar a un familiar mayor?"]},{"n":8,"label":"Análisis","title":"Replantee de acuerdo con el momento","sub":"Adaptación continua ante los cambios","teoria":"El cuidado es un proceso dinámico que evoluciona con el tiempo. El modelo ICOPE propone que la evaluación de las capacidades de la persona mayor debe ser continua, no un evento único. La Política Nacional de Cuidados 2021-2031 reconoce que los contextos sociales también cambian: redes de apoyo, recursos económicos, condiciones del entorno físico.","analisis":"El riesgo más común es la inercia: continuar haciendo lo mismo porque siempre se ha hecho así. Señales que exigen replanteamiento: una hospitalización, diagnóstico nuevo, caída, pérdida de un miembro de la red de apoyo, cambio económico familiar, o deterioro cognitivo o emocional significativo.","recs":["Evaluaciones periódicas cada seis meses: ¿cómo está el adulto mayor? ¿funciona lo acordado? ¿qué hay que cambiar?","Aprenda a leer señales sutiles: aislamiento, pérdida de peso inexplicada, confusión nueva, dos o más caídas recientes","Replanteen juntos — los cambios decididos unilateralmente generan desconfianza"],"preguntas":["¿Cada cuánto deberíamos revisar el plan de cuidado de mi familiar?","¿Qué señales indican que hay que cambiar el plan de cuidado actual?","¿Qué hago si mi familiar tuvo una caída o una hospitalización reciente?"]},{"n":9,"label":"Asesoría","title":"El que pregunta, a Roma llega","sub":"Buscar orientación especializada","teoria":"La Ley 7935 crea el CONAPAM como ente rector en materia de envejecimiento en Costa Rica. La CCSS garantiza atención integral de salud incluyendo geriatría especializada. La Convención Interamericana (Ley 9394) reconoce el derecho de las familias a recibir orientación y apoyo para ejercer su rol de cuidado de forma responsable e informada.","analisis":"Existe una barrera cultural significativa para buscar asesoría en asuntos percibidos como exclusivamente familiares. Sus consecuencias son concretas: familias que eligen hogares no habilitados por el Ministerio de Salud, cuidadores que no reconocen síntomas de agotamiento extremo, familias que vulneran derechos del adulto mayor sin saberlo.","recs":["CONAPAM: (506) 2202-4000 — www.conapam.go.cr","CCSS: atención geriátrica en hospitales y clínicas — solicite referidos a especialistas","Ministerio de Salud: registro público de hogares de larga estadía habilitados","Documentá cada consulta: conclusiones, recomendaciones y seguimientos acordados"],"preguntas":["¿A quién llamo primero si no sé qué hacer con el cuidado de mi familiar?","¿Cómo verifico si un hogar de larga estadía está habilitado por el Ministerio de Salud?","¿Qué servicios ofrece la CCSS para personas adultas mayores en mi zona?"]},{"n":10,"label":"Trascendencia","title":"La muerte como parte de la planificación familiar","sub":"Un acto de amor anticipado","teoria":"La muerte es la única certeza absoluta del proceso de envejecimiento, y paradójicamente la que menos se planifica. La Ley N.° 10231 de Voluntades Anticipadas (2022) reconoce el derecho de toda persona a expresar por adelantado sus decisiones sobre tratamientos médicos, incluyendo el rechazo a tratamientos que prolonguen la vida de forma artificial cuando no hay posibilidad razonable de recuperación.","analisis":"Cuando la muerte llega sin conversación previa, las decisiones más importantes caen sobre una familia en shock emocional. Esto genera conflictos que pueden fracturar las relaciones permanentemente. El duelo del cuidador principal merece atención especial: su rutina, identidad y red social estaban organizados en torno al cuidado.","recs":["Abra la conversación antes de que sea urgente — con amor y sin presión","Gestione las voluntades anticipadas y el testamento mientras el adulto mayor tiene plena capacidad (Ley 10231)","Acompañe el duelo del cuidador principal — no normalicen el 'hay que ser fuerte'","Si el proceso se complica, la ayuda psicológica especializada no es debilidad: es una decisión inteligente y amorosa"],"preguntas":["¿Cómo hablo con mi familiar sobre sus deseos para el final de su vida?","¿Qué son las voluntades anticipadas y cómo las gestiono en Costa Rica?","¿Cómo acompaño el duelo de quien fue el cuidador principal?"]}],"checklists":[{"group":"Conciencia y preparación","items":["Toda la familia conoce qué es la vejez y el envejecimiento","Hemos hablado sobre los cambios que puede traer la vejez","Sabemos cuáles son los derechos de las personas adultas mayores en Costa Rica","Conocemos la diferencia entre autonomía e independencia"]},{"group":"Diagnóstico y planificación","items":["Tenemos un diagnóstico actualizado de la salud del adulto mayor","Conocemos su nivel de dependencia (física, cognitiva, emocional)","Hemos definido quién asume qué responsabilidades en la familia","Tenemos un plan de apoyo documentado y con fecha de revisión"]},{"group":"Comunicación y acuerdos","premium":true,"items":["Tenemos espacios regulares de diálogo familiar sobre los cuidados","Hemos establecido acuerdos concretos y escritos","La persona adulta mayor participa en las decisiones que le competen","Reconocemos todos los tipos de aporte — no solo el económico"]},{"group":"Red de apoyo y recursos","premium":true,"items":["Conocemos el CONAPAM y cómo contactarlo","Tenemos contacto con el médico de cabecera del adulto mayor","Sabemos dónde consultar la lista de hogares habilitados por el Ministerio de Salud","El cuidador principal tiene espacios de autocuidado y descanso"]},{"group":"Planificación del final de vida","premium":true,"items":["Hemos tenido una conversación sobre los deseos del adulto mayor para el final de su vida","Existe un testamento o está en proceso","Conocemos la Ley 10231 sobre voluntades anticipadas","La familia sabe a quién llamar ante una emergencia de salud grave"]}],"books":[{"category":"Marco legal de Costa Rica","tag":"Ley 7935","title":"Ley Integral para la Persona Adulta Mayor","author":"Asamblea Legislativa de Costa Rica (1999)","desc":"La ley marco de los derechos de las personas adultas mayores en Costa Rica: autonomía, atención integral y protección contra el abandono y la violencia.","url":"https://pgrweb.go.cr/scij/Busqueda/Normativa/Normas/nrm_texto_completo.aspx?param1=NRTC&nValor1=1&nValor2=43655&nValor3=95259"},{"category":"Marco legal de Costa Rica","tag":"Ley 9394","title":"Convención Interamericana sobre la Protección de los Derechos Humanos de las Personas Mayores","author":"OEA, ratificada por Costa Rica (2016)","desc":"El primer tratado internacional vinculante dedicado exclusivamente a los derechos de las personas mayores: salud, vivienda, participación y una vida libre de violencia.","url":"https://formatos.inamu.go.cr/SIDOC/archivosPeriodicosOficiales/ley_9394_636111055820557446.pdf"},{"category":"Marco legal de Costa Rica","tag":"Código de Familia, Art. 169","title":"Código de Familia","author":"Asamblea Legislativa de Costa Rica","desc":"El Artículo 169 establece la obligación alimentaria hacia personas adultas mayores dependientes — la base legal de la responsabilidad familiar en el cuidado.","url":"https://www.asamblea.go.cr/sd/Documents/BIBLIOTECADIGITAL/DOCUMENTOS/CODIGOS/C%C3%B3digo%20de%20Familia.pdf"},{"category":"Marco legal de Costa Rica","tag":"Constitución, Art. 51","title":"Constitución Política de Costa Rica","author":"Asamblea Nacional Constituyente (1949)","desc":"El Artículo 51 establece que la familia, la madre, la niñez, la persona adulta mayor y las personas con discapacidad tienen derecho a la protección especial del Estado.","url":"https://www.imprentanacional.go.cr/editorialdigital/libros/textos%20juridicos/constitucion_politica_digital_edincr.pdf"},{"category":"Marco legal de Costa Rica","tag":"Ley 10231","title":"Ley de Voluntades Anticipadas","author":"Asamblea Legislativa de Costa Rica (2022)","desc":"Regula el derecho de toda persona a expresar por adelantado sus decisiones sobre tratamientos médicos al final de la vida.","url":"https://www.archivonacional.go.cr/web/normativa/ley10231.pdf"},{"category":"Marco legal de Costa Rica","tag":"Decreto 44730-S","title":"Norma para la Habilitación de Hogares de Larga Estancia","author":"Ministerio de Salud de Costa Rica (2024)","desc":"Los requisitos oficiales que debe cumplir un hogar de larga estancia para operar legalmente — útil para verificar antes de elegir uno.","url":"http://www.pgrweb.go.cr/scij/Busqueda/Normativa/Normas/nrm_texto_completo.aspx?param1=NRTC&nValor1=1&nValor2=103294&nValor3=143305&strTipM=TC"},{"category":"Políticas públicas e informes","tag":"Costa Rica","title":"Política Nacional de Cuidados 2021-2031","author":"IMAS / Gobierno de Costa Rica","desc":"El documento oficial que guía la construcción de un sistema nacional de apoyo a los cuidados en Costa Rica — el marco de política pública detrás de buena parte del contenido de esta guía.","url":"https://www.imas.go.cr/sites/default/files/custom/Politica%20Nacional%20de%20Cuidados%202021-2031.pdf"},{"category":"Políticas públicas e informes","tag":"Costa Rica","title":"Política Nacional de Envejecimiento y Vejez 2023-2033","author":"Gobierno de Costa Rica / UNFPA","desc":"La política pública costarricense más reciente centrada específicamente en el envejecimiento y la vejez, con lineamientos para los próximos diez años.","url":"https://costarica.unfpa.org/sites/default/files/pub-pdf/politica_nacional_envejecimiento_y_vejez_web_0.pdf"},{"category":"Políticas públicas e informes","tag":"Regional","title":"Envejecer en América Latina y el Caribe: protección social y calidad de vida de las personas mayores","author":"Banco Interamericano de Desarrollo (BID), 2022","desc":"Analiza cómo pensiones, servicios de salud y cuidados de larga duración se combinan para proteger la calidad de vida de las personas mayores en la región. Licencia Creative Commons — de acceso libre y sin costo.","url":"/lecturas/bid-envejecer-en-america-latina-y-el-caribe.pdf"},{"category":"Políticas públicas e informes","tag":"Regional","title":"Envejecimiento, personas mayores y Agenda 2030 para el Desarrollo Sostenible: perspectiva regional y de derechos humanos","author":"CEPAL, Naciones Unidas","desc":"Sitúa el envejecimiento como tema de derechos humanos dentro de la Agenda 2030, con foco en América Latina y el Caribe.","url":"https://repositorio.cepal.org/bitstream/handle/11362/44369/1/S1800629_es.pdf"},{"category":"Manuales y guías de cuidado","tag":"Principios 2, 4, 8 y 9","title":"Manual de Habilidades para Cuidadores de Mayores Dependientes (edición 2026)","author":"Sociedad Española de Geriatría y Gerontología (SEGG)","desc":"Guía interdisciplinaria completa: autonomía e incapacitación, autocuidado del cuidador, recursos sociales, higiene, movilizaciones, medicación y más.","url":"https://www.segg.es/media/descargas/MANUAL-DE-HABILIDADES-PARA-CUIDADORES-DE-MAYORES-DEPENDIENTES-2026.pdf"},{"category":"Manuales y guías de cuidado","tag":"Principios 1, 3, 4 y 8","title":"Manual de Cuidados Generales para el Adulto Mayor","author":"Instituto para la Atención de los Adultos Mayores — México","desc":"Perspectiva latinoamericana: terapia ocupacional, envejecimiento activo, y el perfil y los retos del cuidador familiar.","url":"https://fiapam.org/wp-content/uploads/2014/09/Manual_cuidados-generales.pdf"},{"category":"Manuales y guías de cuidado","tag":"Principio 1 y transversal","title":"Manual para cuidadores de personas con demencia","author":"Ministerio de Sanidad, España","desc":"Guía gratuita y completa sobre cómo cuidar a una persona con demencia o Alzheimer — un tema muy frecuente en el cuidado familiar.","url":"https://www.sanidad.gob.es/areas/calidadAsistencial/estrategias/enfermedadesNeurodegenerativas/manualCuidadoresDemencia/home.htm"},{"category":"Comunicación y resolución de conflictos","tag":"Principio 5","title":"Comunicación Asertiva en Familia","author":"Gobierno de Jalisco, México","desc":"Ficha breve y práctica sobre cómo comunicar el propio punto de vista con claridad y respeto dentro de la familia — la base de una conversación asertiva.","url":"https://apprendedigital.jalisco.gob.mx/wp-content/uploads/2022/04/FICHA-COMUNICACIO%CC%81N-ASERTIVA-EN-FAMILIA-1.pdf"},{"category":"Comunicación y resolución de conflictos","tag":"Principio 6","title":"La familia cuenta: cómo resolver los conflictos familiares","author":"Instituto Complutense de Mediación y Gestión de Conflictos, UCM","desc":"Guía práctica para familias sobre conflictos de pareja, con hijos, entre hermanos y con los abuelos — herramientas para encontrar soluciones de forma cooperativa.","url":"https://www.ucm.es/data/cont/media/www/pag-50196/documentos/GUIA%2013-C%C3%B3mo%20resolver%20los%20Conflictos%20Familiares.pdf"},{"category":"Comunicación y resolución de conflictos","tag":"Principio 7","title":"La familia dialoga y llega a acuerdos: la mediación familiar","author":"Instituto Complutense de Mediación y Gestión de Conflictos, UCM","desc":"Guía complementaria centrada específicamente en cómo construir acuerdos familiares duraderos a través del diálogo y la mediación.","url":"https://www.ucm.es/data/cont/media/www/pag-41339/lafamiliadialogayllegaaacuerdos.pdf"}],"videoChannels":[{"country":"🇨🇷 Costa Rica","platform":"youtube","title":"CCSS — Canal oficial","desc":"Canal de YouTube de la Caja Costarricense de Seguro Social, con contenido de salud pública incluyendo temas de personas adultas mayores.","url":"https://www.youtube.com/user/ccssdecostarica"},{"country":"🇨🇷 Costa Rica","platform":"web","title":"CCSS — Curso virtual para cuidadores de adultos mayores","desc":"Curso gratuito y específico para cuidadores familiares, en la plataforma propia de la CCSS (no es YouTube).","url":"https://ccss.enterprisetube.com/play/video/80296/Cursovirtualparacuidadoresdeadultosmayores?cId=7160"},{"country":"🇨🇷 Costa Rica","platform":"instagram","title":"AGECO — Asociación Gerontológica Costarricense","desc":"ONG costarricense que trabaja por una vejez digna y activa y por los derechos humanos de las personas mayores.","url":"https://www.instagram.com/asociaciongerontologicacr/"},{"country":"🇨🇷 Costa Rica","platform":"facebook","title":"CONAPAM — Consejo Nacional de la Persona Adulta Mayor","desc":"Página oficial del órgano rector en envejecimiento y vejez en Costa Rica, citado en varios de los principios de esta guía.","url":"https://www.facebook.com/ConsejoNacionaldelaPersonaAdultaMayor/"},{"country":"🇨🇱 Chile","platform":"youtube","title":"SENAMA — Servicio Nacional del Adulto Mayor","desc":"Canal oficial del gobierno de Chile con campañas de buen trato, envejecimiento activo y capacitaciones.","url":"https://www.youtube.com/@senamagob6327"},{"country":"🇪🇸 España","platform":"youtube","title":"SEGG — Sociedad Española de Geriatría y Gerontología","desc":"Canal de la misma sociedad científica citada en varias de las lecturas de esta biblioteca.","url":"https://www.youtube.com/channel/UCcY45R21OXsXbFLXp8Fb8uA"},{"country":"🇪🇸 España","platform":"youtube","title":"Universitat de Barcelona","desc":"Canal general de la universidad — incluye contenido académico y de divulgación en salud.","url":"https://www.youtube.com/channel/UC_GiZI1PNCEPJ3lP_21Vtiw"},{"country":"🇲🇽 México","platform":"youtube","title":"Vejez Creativa con Patricia Kelly","desc":"Periodista mexicana pionera en comunicación sobre la vejez — sexualidad, derechos y envejecimiento activo, con más de 780 videos.","url":"https://www.youtube.com/@VejezCreativaConPatriciaKelly"},{"country":"🇲🇽 México","platform":"youtube","title":"Yami Gerontóloga","desc":"Contenido corto y accesible sobre gerontología y cuidado de personas adultas mayores.","url":"https://www.youtube.com/@yamigerontologa"}],"concepts":[{"label":"Vejez","title":"¿Qué es la vejez?","text":"Construcción social de la última etapa del curso de vida (Ley 9394). En Costa Rica: personas con 65 años o más (Ley 7935). No es sinónimo de enfermedad ni de deterioro inevitable."},{"label":"Envejecimiento","title":"¿Qué es el envejecimiento?","text":"Proceso gradual que ocurre durante toda la vida, con cambios biológicos, fisiológicos, psicosociales y funcionales. No es lineal ni igual para todas las personas. La edad cronológica no determina el estado de salud."},{"label":"Autonomía","title":"Autonomía e independencia","text":"Autonomía: capacidad de tomar decisiones propias. Independencia: capacidad de realizar actividades sin ayuda. La pérdida de independencia no extingue la autonomía."},{"label":"Dependencia","title":"Dependencia funcional","text":"Situación en que una persona requiere apoyo de terceros para actividades básicas o instrumentales de la vida diaria. No toda persona mayor es dependiente; la dependencia puede ser parcial o total."},{"label":"ICOPE","title":"Modelo ICOPE (OMS/OPS)","text":"Atención Integrada para Personas Mayores. Valora 6 capacidades: auditiva, cognitiva, locomotriz, psicológica, visual y vitalidad. Enfoque centrado en la persona, no en la enfermedad."},{"label":"Legislación CR","title":"Marco legal en Costa Rica","text":"Ley 7935, Ley 9394, Art. 51 Constitución, Código de Familia Art. 169, Ley 10231. El abandono se penaliza con hasta 10 años de prisión."},{"label":"Ley 7935","title":"Ley Integral para la Persona Adulta Mayor","text":"La ley marco costarricense (1999). Su Artículo 6 reconoce el derecho de toda persona adulta mayor a tomar sus propias decisiones y desarrollar una vida autónoma e independiente. También crea el CONAPAM y obliga a que la atención sea integral: biológica, psicológica y social."},{"label":"CONAPAM","title":"¿Qué es el CONAPAM?","text":"El Consejo Nacional de la Persona Adulta Mayor, creado por la Ley 7935 como el ente rector en materia de envejecimiento y vejez en Costa Rica. Formula políticas públicas y puede recibir consultas de las familias: (506) 2202-4000."},{"label":"Ley 9394","title":"Convención Interamericana sobre Personas Mayores","text":"Ratificada por Costa Rica en 2016, es el primer tratado internacional vinculante dedicado exclusivamente a los derechos de las personas mayores — salud, vivienda, participación y una vida libre de violencia."},{"label":"No discriminación","title":"Igualdad y no discriminación por edad","text":"El Artículo 5 de la Ley 9394 reconoce el derecho a la igualdad y a no ser discriminado por razones de edad. Un trato distinto e injustificado 'porque ya está viejo o vieja' vulnera este derecho, incluso dentro de la propia familia."},{"label":"Cuidados paliativos","title":"Derecho a la salud y a los cuidados paliativos","text":"El Artículo 19 de la Ley 9394 reconoce el derecho a la salud de las personas mayores, incluyendo explícitamente el derecho a recibir cuidados paliativos para aliviar el sufrimiento y mejorar la calidad de vida, no solo tratamientos curativos."},{"label":"Capacidad jurídica","title":"Igual reconocimiento como persona ante la ley","text":"El Artículo 30 de la Ley 9394 reconoce el derecho de las personas mayores al igual reconocimiento como persona ante la ley. El Estado debe garantizar salvaguardas adecuadas, no sustituir automáticamente su voluntad por la de la familia."},{"label":"Abandono","title":"¿Qué dice la ley sobre el abandono?","text":"En Costa Rica, el abandono de una persona adulta mayor en situación de dependencia se sanciona penalmente y puede llegar hasta 10 años de prisión. No requiere que sea intencional para ser reconocido como negligencia."},{"label":"Cuidador","title":"El cuidador familiar","text":"Persona que asume la responsabilidad de apoyar a un adulto mayor. Está expuesto al síndrome del cuidador quemado cuando no cuenta con relevo, autocuidado ni red de apoyo."},{"label":"Duelo","title":"Duelo y duelo anticipado","text":"El duelo anticipado comienza antes de la muerte biológica, al observar el deterioro progresivo. El duelo del cuidador principal tiene características propias que requieren acompañamiento específico."}],"agreementTemplates":[{"id":"reparto","principle":"Principio 4 — Ejecución","title":"Acuerdo de reparto de responsabilidades","desc":"Define quién hace qué en el cuidado diario, para que nadie cargue solo con todo.","fields":[{"key":"integrantes","label":"Integrantes de la familia y su rol","type":"textarea","placeholder":"Ej: María — cuidado diario entre semana\nCarlos — aporte económico mensual\nAna — acompañamiento los fines de semana"},{"key":"tareas","label":"Tareas específicas y quién las asume","type":"textarea","placeholder":"Ej: Compras de medicamentos — Carlos\nCitas médicas — María\nAseo y comidas — Ana"},{"key":"relevos","label":"Horarios de relevo y descanso del cuidador principal","type":"textarea","placeholder":"Ej: Todos los domingos, Ana releva a María de 9am a 6pm"},{"key":"revision","label":"Fecha de próxima revisión","type":"text","placeholder":"Ej: 22 de enero de 2027"}]},{"id":"aportes","principle":"Principio 7 — Acuerdos","title":"Acuerdo de aportes económicos","desc":"Pone en blanco y negro quién aporta cuánto y para qué, evitando resentimientos por acuerdos tácitos.","fields":[{"key":"aportantes","label":"Quién aporta y cuánto","type":"textarea","placeholder":"Ej: Carlos — ₡100,000/mes\nMaría — ₡50,000/mes"},{"key":"gastos","label":"Gastos cubiertos","type":"textarea","placeholder":"Ej: Medicamentos, cuidadora de medio tiempo, transporte a citas médicas"},{"key":"forma_pago","label":"Forma y fecha de pago","type":"text","placeholder":"Ej: SINPE Móvil, los días 5 de cada mes"},{"key":"revision","label":"Fecha de próxima revisión","type":"text","placeholder":"Ej: 22 de enero de 2027"}]},{"id":"plancuidado","principle":"Principios 3 y 8 — Planificación y Análisis","title":"Plan de cuidado con revisión periódica","desc":"El diagnóstico y los objetivos del cuidado, con fecha para replantear si algo cambia.","fields":[{"key":"diagnostico","label":"Estado de salud y autonomía actual","type":"textarea","placeholder":"Ej: Movilidad reducida, usa bastón, memoria conservada"},{"key":"objetivos","label":"Objetivos del plan de cuidado","type":"textarea","placeholder":"Ej: Mantener actividad física semanal, control médico cada 2 meses"},{"key":"responsables","label":"Responsables de cada objetivo","type":"textarea","placeholder":"Ej: Control médico — María, Ejercicio — Ana"},{"key":"senales","label":"Señales que indicarían que hay que replantear el plan","type":"textarea","placeholder":"Ej: Dos o más caídas, aislamiento, pérdida de peso"},{"key":"revision","label":"Fecha de próxima revisión","type":"text","placeholder":"Ej: 22 de enero de 2027"}]},{"id":"emergencia","principle":"Principio 9 — Asesoría","title":"Plan de emergencia","desc":"Toda la información clave a mano para el momento en que haya que actuar rápido.","fields":[{"key":"contactos","label":"Contactos de emergencia (nombre, parentesco, teléfono)","type":"textarea","placeholder":"Ej: María, hija, 8888-8888"},{"key":"hospital","label":"Hospital o clínica de preferencia (CCSS)","type":"text","placeholder":"Ej: Hospital México"},{"key":"medico","label":"Médico de cabecera o especialista","type":"text","placeholder":"Ej: Dra. Rodríguez, geriatra, clínica de Escazú"},{"key":"medicamentos","label":"Medicamentos actuales y dosis","type":"textarea","placeholder":"Ej: Losartán 50mg — 1 vez al día"},{"key":"alergias","label":"Alergias conocidas","type":"text","placeholder":"Ej: Penicilina"}]}],"guias":[{"titulo":"Las primeras semanas en el Hogar","resumen":"La adaptación toma tiempo, para la persona y para la familia.","puntos":["Es normal que las primeras semanas haya tristeza, enojo o confusión. Suele mejorar entre el primer y el tercer mes.","Traigan objetos que le den identidad: fotos, una cobija, su radio, un adorno de la casa.","Visitas cortas y frecuentes ayudan más al inicio que visitas largas y espaciadas.","Cuéntenle al equipo sus gustos, rutinas y costumbres: a qué hora se levanta, qué le calma, qué le molesta.","Despedirse siempre, aunque sea difícil. Irse sin avisar genera más angustia y desconfianza."]},{"titulo":"La culpa no es una señal de abandono","resumen":"Elegir un hogar puede ser una decisión de cuidado y de amor.","puntos":["Muchas familias sienten culpa al ingresar a su ser querido. Es una emoción frecuente, no prueba de que hicieron algo mal.","Un hogar habilitado ofrece atención profesional las 24 horas que a veces la familia ya no puede dar sin enfermarse.","El vínculo no termina con el ingreso: la familia sigue siendo indispensable en su vida.","Si la culpa no les deja dormir o les impide visitar, pueden hablarlo con Trabajo Social del Hogar."]},{"titulo":"Visitas que hacen bien","resumen":"Lo importante no es cuánto tiempo, sino cómo se comparte.","puntos":["Lleven algo para hacer juntos: ver fotos, escuchar su música, leer el periódico, caminar por el jardín.","Pregúntenle su opinión y denle espacio para decidir pequeñas cosas.","Si se repite una historia, escúchenla otra vez: para la persona sigue siendo importante.","Organicen un calendario entre hermanos para que las visitas no dependan de una sola persona.","Las llamadas y videollamadas también cuentan en los días en que no pueden llegar."]},{"titulo":"Comunicarse cuando hay problemas de memoria","resumen":"Adaptar la forma de hablar evita discusiones y angustia.","puntos":["Hablen de frente, despacio, con frases cortas y una idea a la vez.","No le corrijan ni discutan si confunde fechas o personas; acompañen la emoción detrás de lo que dice.","Preséntense al llegar: \"Hola mamá, soy Ana, tu hija\".","Usen el tacto y la sonrisa: a veces comunican más que las palabras."]},{"titulo":"Participar en las decisiones de cuidado","resumen":"La persona residente y su familia siguen teniendo voz.","puntos":["La persona adulta mayor conserva sus derechos y su capacidad de decidir sobre su vida (Ley 7935).","Pidan conocer el plan de atención y participen en las reuniones de seguimiento.","Mantengan al día los teléfonos de contacto y avisen quién es la persona de referencia de la familia.","Conversen a tiempo sobre sus deseos para el final de la vida y las voluntades anticipadas (Ley 10231)."]},{"titulo":"El duelo y la despedida","resumen":"Prepararse también es una forma de acompañar.","puntos":["El duelo puede empezar antes de la muerte, al ver cambios en la persona. Es normal y tiene nombre: duelo anticipado.","Dejen por escrito con el Hogar a quién llamar y qué desean en caso de una emergencia o fallecimiento.","Despedirse con calma, decir lo que necesitan decir, también es parte del cuidado.","Si el duelo se vuelve muy pesado, buscar apoyo psicológico es una decisión sana."]}]};
+
+const store = {
+  get(key, fallback) { try { const v = localStorage.getItem(key); return v ? JSON.parse(v) : fallback; } catch { return fallback; } },
+  set(key, value) { try { localStorage.setItem(key, JSON.stringify(value)); } catch {} },
+};
+const esc = (s) => String(s).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const bullets = (items) => `<ul class="bullets">${items.map(i => `<li>${esc(i)}</li>`).join('')}</ul>`;
+function toast(msg) {
+  const t = document.getElementById('toast');
+  t.textContent = msg; t.classList.add('show');
+  clearTimeout(t._h); t._h = setTimeout(() => t.classList.remove('show'), 2200);
+}
+function download(name, text, type) {
+  const url = URL.createObjectURL(new Blob([text], { type: type || 'text/plain;charset=utf-8' }));
+  const a = document.createElement('a'); a.href = url; a.download = name; a.click();
+  setTimeout(() => URL.revokeObjectURL(url), 1000);
+}
+
+// ── Orientaciones para familias de residentes
+document.getElementById('guias-list').innerHTML = DATA.guias.map((g, i) => `
+  <details class="acc">
+    <summary><span class="acc-num">${i + 1}</span><div><div class="acc-title">${esc(g.titulo)}</div><div class="acc-sub">${esc(g.resumen)}</div></div></summary>
+    <div class="acc-body">${bullets(g.puntos)}</div>
+  </details>`).join('');
+
+// ── 10 principios
+document.getElementById('principios-list').innerHTML = DATA.principles.map(p => `
+  <details class="acc">
+    <summary><span class="acc-num">${String(p.n).padStart(2, '0')}</span><div><div class="acc-kicker">${esc(p.label)}</div><div class="acc-title">${esc(p.title)}</div><div class="acc-sub">${esc(p.sub)}</div></div></summary>
+    <div class="acc-body">
+      <h4>Base teórica</h4><p>${esc(p.teoria)}</p>
+      <h4>Análisis</h4><p>${esc(p.analisis)}</p>
+      <div class="recs"><h4>Recomendaciones</h4>${bullets(p.recs)}</div>
+      <div class="talk"><h4>Para conversar en familia</h4>${bullets(p.preguntas)}<p style="font-size:13px;margin-top:0.4rem;">Si alguna de estas preguntas les preocupa, pueden conversarla con el equipo del Hogar.</p></div>
+    </div>
+  </details>`).join('');
+
+// ── Checklist familiar
+let checks = store.get('hve_checklist', {});
+function renderChecklist() {
+  document.getElementById('checklist-list').innerHTML = DATA.checklists.map((g, gi) => {
+    const done = g.items.filter((_, ii) => checks[`${gi}-${ii}`]).length;
+    return `<div class="check-group">
+      <div class="check-group-head"><h3>${esc(g.group)}</h3><span>${Math.round(done / g.items.length * 100)}%</span></div>
+      ${g.items.map((it, ii) => `<label class="check-item"><input type="checkbox" data-k="${gi}-${ii}" ${checks[`${gi}-${ii}`] ? 'checked' : ''}><span>${esc(it)}</span></label>`).join('')}
+    </div>`;
+  }).join('');
+  const total = DATA.checklists.reduce((a, g) => a + g.items.length, 0);
+  const pct = Math.round(Object.values(checks).filter(Boolean).length / total * 100);
+  document.getElementById('total-pct').textContent = pct + '%';
+  document.getElementById('total-bar').style.width = pct + '%';
+}
+document.getElementById('checklist-list').addEventListener('change', (e) => {
+  if (!e.target.dataset.k) return;
+  checks[e.target.dataset.k] = e.target.checked;
+  store.set('hve_checklist', checks);
+  renderChecklist();
+});
+function resetChecklist() {
+  if (!confirm('¿Borrar todas las marcas del checklist en este dispositivo?')) return;
+  checks = {}; store.set('hve_checklist', checks); renderChecklist();
+}
+renderChecklist();
+
+// ── Plantillas de acuerdos
+let agreements = store.get('hve_acuerdos', {});
+document.getElementById('acuerdos-list').innerHTML = DATA.agreementTemplates.map(t => `
+  <details class="acc">
+    <summary><div><div class="acc-kicker">${esc(t.principle)}</div><div class="acc-title">${esc(t.title)}</div><div class="acc-sub">${esc(t.desc)}</div></div></summary>
+    <div class="acc-body">
+      ${t.fields.map(f => `<div class="field"><label for="f-${t.id}-${f.key}">${esc(f.label)}</label>${f.type === 'textarea'
+        ? `<textarea id="f-${t.id}-${f.key}" data-t="${t.id}" data-f="${f.key}" placeholder="${esc(f.placeholder)}" rows="3"></textarea>`
+        : `<input id="f-${t.id}-${f.key}" data-t="${t.id}" data-f="${f.key}" placeholder="${esc(f.placeholder)}">`}</div>`).join('')}
+      <div class="btn-row">
+        <button class="btn btn-ghost btn-sm" onclick="copyAgreement('${t.id}')">Copiar texto</button>
+        <button class="btn btn-primary btn-sm" onclick="downloadAgreement('${t.id}')">Descargar .txt</button>
+      </div>
+    </div>
+  </details>`).join('');
+document.querySelectorAll('#acuerdos-list [data-t]').forEach(el => {
+  el.value = agreements[el.dataset.t]?.[el.dataset.f] || '';
+  el.addEventListener('input', () => {
+    agreements[el.dataset.t] = { ...(agreements[el.dataset.t] || {}), [el.dataset.f]: el.value };
+    store.set('hve_acuerdos', agreements);
+  });
+});
+function agreementText(id) {
+  const t = DATA.agreementTemplates.find(x => x.id === id);
+  const d = agreements[id] || {};
+  const lines = [t.title, ''];
+  t.fields.forEach(f => { lines.push(f.label + ':', (d[f.key] || '').trim() || '(sin completar)', ''); });
+  lines.push('Elaborado con la guía para familias del Hogar Vicentina de Escazú — hogarescazu.cr');
+  return lines.join('\n');
+}
+async function copyAgreement(id) {
+  try { await navigator.clipboard.writeText(agreementText(id)); toast('Texto copiado'); }
+  catch { toast('No se pudo copiar. Puede descargarlo.'); }
+}
+function downloadAgreement(id) { download(`acuerdo-${id}.txt`, agreementText(id)); }
+
+// ── Recordatorios
+let reminders = store.get('hve_recordatorios', []);
+const daysUntil = (d) => { const t = new Date(); t.setHours(0,0,0,0); return Math.round((new Date(d + 'T00:00:00') - t) / 86400000); };
+const fmtDate = (d) => new Date(d + 'T00:00:00').toLocaleDateString('es-CR', { day: 'numeric', month: 'long', year: 'numeric' });
+function renderReminders() {
+  const list = document.getElementById('rem-list');
+  const sorted = [...reminders].sort((a, b) => a.date.localeCompare(b.date));
+  if (!sorted.length) { list.innerHTML = '<p class="empty">Todavía no tiene recordatorios. Agregue el primero abajo.</p>'; return; }
+  list.innerHTML = sorted.map(r => {
+    const d = daysUntil(r.date);
+    const [cls, label] = d < 0 ? ['late', 'vencido'] : d === 0 ? ['soon', 'hoy'] : d <= 14 ? ['soon', `en ${d} día${d === 1 ? '' : 's'}`] : ['ok', `en ${d} días`];
+    return `<div class="rem">
+      <div><div class="rem-label">${esc(r.label)}</div><div class="rem-date">${fmtDate(r.date)}</div></div>
+      <div class="rem-actions"><span class="pill ${cls}">${label}</span>
+        <button class="btn btn-ghost btn-sm" onclick="toCalendar(${r.id})">Agregar al calendario</button>
+        <button class="icon-btn" onclick="removeReminder(${r.id})" aria-label="Eliminar recordatorio">✕</button></div>
+    </div>`;
+  }).join('');
+}
+function quickDate(months) {
+  const d = new Date(); d.setMonth(d.getMonth() + months);
+  document.getElementById('rem-date').value = d.toISOString().slice(0, 10);
+}
+function addReminder() {
+  const label = document.getElementById('rem-label').value.trim();
+  const date = document.getElementById('rem-date').value;
+  if (!label || !date) { toast('Escriba qué recordar y elija una fecha'); return; }
+  reminders.push({ id: Date.now(), label, date });
+  store.set('hve_recordatorios', reminders);
+  document.getElementById('rem-label').value = ''; document.getElementById('rem-date').value = '';
+  renderReminders(); toast('Recordatorio agregado');
+}
+function removeReminder(id) {
+  reminders = reminders.filter(r => r.id !== id);
+  store.set('hve_recordatorios', reminders); renderReminders();
+}
+function toCalendar(id) {
+  const r = reminders.find(x => x.id === id);
+  const day = r.date.replace(/-/g, '');
+  const next = new Date(r.date + 'T00:00:00'); next.setDate(next.getDate() + 1);
+  const ics = ['BEGIN:VCALENDAR', 'VERSION:2.0', 'PRODID:-//Hogar Vicentina de Escazu//Familias//ES', 'BEGIN:VEVENT',
+    `UID:${r.id}@hogarescazu.cr`, `DTSTAMP:${new Date().toISOString().replace(/[-:]/g, '').slice(0, 15)}Z`,
+    `DTSTART;VALUE=DATE:${day}`, `DTEND;VALUE=DATE:${next.toISOString().slice(0, 10).replace(/-/g, '')}`,
+    `SUMMARY:${r.label.replace(/[,;]/g, ' ')}`, 'DESCRIPTION:Recordatorio de la guía para familias del Hogar Vicentina de Escazú',
+    'END:VEVENT', 'END:VCALENDAR'].join('\r\n');
+  download('recordatorio.ics', ics, 'text/calendar;charset=utf-8');
+}
+renderReminders();
+
+// ── Recursos
+const catIcon = { 'Marco legal de Costa Rica': '⚖️', 'Políticas públicas e informes': '🏛️', 'Manuales y guías de cuidado': '📖', 'Comunicación y resolución de conflictos': '💬' };
+const platformCta = { youtube: 'Ver canal →', web: 'Ver curso →', instagram: 'Ver cuenta →', facebook: 'Ver página →' };
+const cats = [...new Set(DATA.books.map(b => b.category))];
+const absUrl = (u) => u.startsWith('/') ? u.slice(1) : u;
+document.getElementById('recursos-list').innerHTML = cats.map(c => `
+  <div class="res-cat">${catIcon[c] || '📖'} ${esc(c)}</div>
+  <div class="res-grid">${DATA.books.filter(b => b.category === c).map(b => `
+    <a class="res" href="${esc(absUrl(b.url))}" target="_blank" rel="noopener">
+      <span class="res-tag">${esc(b.tag)}</span><h3>${esc(b.title)}</h3><div class="res-author">${esc(b.author)}</div><p>${esc(b.desc)}</p><span class="res-cta">Ver documento →</span>
+    </a>`).join('')}</div>`).join('') + `
+  <div class="res-cat">🌐 Redes y canales recomendados</div>
+  <div class="res-grid">${DATA.videoChannels.map(v => `
+    <a class="res" href="${esc(v.url)}" target="_blank" rel="noopener">
+      <span class="res-tag">${esc(v.country)}</span><h3>${esc(v.title)}</h3><p>${esc(v.desc)}</p><span class="res-cta">${platformCta[v.platform] || 'Ver →'}</span>
+    </a>`).join('')}</div>`;
+
+// ── Conceptos clave
+document.getElementById('conceptos-list').innerHTML = DATA.concepts.map(c => `
+  <div class="concept"><span class="acc-kicker">${esc(c.label)}</span><h3>${esc(c.title)}</h3><p>${esc(c.text)}</p></div>`).join('');
+
+function toggleMobileMenu() {
+  const links = document.querySelector('.nav-links');
+  if (links.style.display === 'flex') links.style.display = '';
+  else links.style.cssText = 'display: flex; flex-direction: column; position: fixed; top: 68px; left: 0; right: 0; background: rgba(253,250,247,0.98); padding: 2rem; gap: 1rem; border-bottom: 1px solid rgba(23,166,145,0.15); z-index: 99;';
+}
+</script>
+</body>
+</html>
